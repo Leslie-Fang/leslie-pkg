@@ -1,6 +1,6 @@
 {
   "name": "leslie-pkg1",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This a demo for create and publish our own npm package",
   "main": "index.js",
   "scripts": {

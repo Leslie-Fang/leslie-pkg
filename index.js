@@ -6,3 +6,8 @@ exports.sayHi = function(){
 exports.printMsg = function(){
     console.log("Write by leslie.")
 };
+
+exports.myAdd = function(a,b){
+    console.log("Doing add")
+    console.log(a+b);
+};

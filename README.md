@@ -1,4 +1,4 @@
-## create package
+## 创建包
 ```
 //在初始化话时我们定义了module的入口文件是index.js
 //在初始化的时候输入的package的名字就是后面npm install时的名字，后面也可以再package.json里面修改
@@ -7,7 +7,7 @@ npm init
 
 在index.js中定义需要export出来的函数
 
-## publish package
+## 发布包
 新用户,先去npm的网站[注册](!https://npmjs.org/)
 
 ```
@@ -25,7 +25,7 @@ npm publish
 需要使用这个package的时候
 ```
 npm install pkg-name --save(--save-dev)
-``
+```
 
 ## 更新新的包
 修改的原有的包的代码之后不可以直接publish的已有的仓库和版本当中,会提示我们没有权限复写已经publish的包
@@ -45,6 +45,10 @@ npm unpublish [<@scope>/]<pkg>[@<version>]
 ## 在git上维护自己的包
 新建一个主分支和一个开发分支
 每一部分开发完成开一个版本分支，将版本的分支publish到npm上面
+
+在develop分支上进行开发，开发完成切换到对应的版本的备选分支，review备选分支的代码，没有问题的话merge的备选分支里面
+修改package.json里面的版本号，上传到git以及发布到npm
+切回到develop分支进行新的开发
 
 
 
